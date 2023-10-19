@@ -156,5 +156,12 @@ loader.style.display = "none";
 function copyToClipboard(){
   navigator.clipboard.writeText(editor.session.getValue())
 }
+var evt = new KeyboardEvent('keydown', { 'keyCode': 188, 'which': 188, 'ctrlKey': true });
+function openSetting() {
+  document.dispatchEvent(evt);
+  console.log("setting opened")
+  console.log(evt)
+}
+
 
 
