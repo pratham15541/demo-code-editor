@@ -158,7 +158,7 @@ function copyToClipboard(){
 }
 var evt = new KeyboardEvent('keydown', { 'keyCode': 188, 'which': 188, 'ctrlKey': true });
 function openSetting() {
-  console.log("setting opened")
+  // console.log("setting opened")
   ace.config.loadModule("ace/ext/settings_menu", function(module) {
     module.init(editor);
     editor.showSettingsMenu();
